@@ -1,0 +1,41 @@
+{
+  "name": "ToDistry",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && next export",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^3.7.0",
+    "@next/font": "13.2.4",
+    "axios": "^1.7.2",
+    "bootstrap": "^5.3.3",
+    "family-chart": "^0.0.0-beta-1",
+    "isotope-layout": "^3.0.6",
+    "next": "^13.2.4",
+    "next-connect": "^1.0.0",
+    "react": "^18.2.0",
+    "react-autocomplete": "^1.8.1",
+    "react-bootstrap": "^2.10.4",
+    "react-bootstrap-icons": "^1.11.5",
+    "react-countup": "^6.4.2",
+    "react-d3-tree": "^3.6.2",
+    "react-datepicker": "^7.3.0",
+    "react-dom": "^18.2.0",
+    "react-google-recaptcha": "^3.1.0",
+    "react-hook-form": "^7.52.1",
+    "react-modal": "^3.16.1",
+    "react-select": "^5.8.0",
+    "react-slick": "^0.29.0",
+    "react-toastify": "^10.0.5",
+    "react-visibility-sensor": "^5.1.1",
+    "slick-carousel": "^1.8.1",
+    "sweetalert2": "^11.19.1",
+    "uuid": "^9.0.0",
+    "wowjs": "^1.1.3",
+    "yup": "^1.4.0"
+  }
+}

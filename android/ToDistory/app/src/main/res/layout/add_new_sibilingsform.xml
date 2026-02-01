@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_15sdp"
+    android:layout_marginEnd="@dimen/_15sdp"
+    app:cardCornerRadius="@dimen/_20sdp"
+    app:cardElevation="@dimen/_5sdp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_25sdp">
+
+        <RadioGroup
+            android:id="@+id/radioGroupSibilng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/_25sdp">
+
+            <RadioButton
+                android:id="@+id/rbSameParents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_7sdp"
+                android:fontFamily="@font/dmsans_font_regular"
+                android:text="Sibilings have same Parents?"
+                android:textColor="@color/black"
+                android:textFontWeight="400"
+                android:textSize="@dimen/_13ssp"
+                android:theme="@style/MyRadioButton" />
+
+            <RadioButton
+                android:id="@+id/rbDiffParents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_7sdp"
+                android:fontFamily="@font/dmsans_font_regular"
+                android:text="Sibiling have Different Parents?"
+                android:textColor="@color/black"
+                android:textFontWeight="400"
+                android:textSize="@dimen/_13ssp"
+                android:theme="@style/MyRadioButton" />
+
+
+        </RadioGroup>
+
+        <RelativeLayout
+            android:id="@+id/rlSubmit"
+            android:layout_width="@dimen/_180sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/button_primary_background"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5sdp">
+
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:adjustViewBounds="true"
+                android:contentDescription="@null"
+                android:src="@drawable/official_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/imgLogo"
+                android:fontFamily="@font/dmsans_font_bold_regular"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:textFontWeight="700"
+                android:textSize="@dimen/_13ssp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

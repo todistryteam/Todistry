@@ -1,0 +1,13 @@
+@import "https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap";
+
+@import "../public/css/dropdown-effects/fade-up.css";
+@import "../public/css/dropdown-effects/fade-down.css";
+
+@import "../public/css/bootstrap.min.css";
+@import "../public/css/flaticon.css";
+@import "../public/css/menu.css";
+@import "../public/css/magnific-popup.css";
+@import "../public/css/animate.css";
+@import "../public/css/style.css";
+@import "../public/css/responsive.css";
+@import "./custom.css";

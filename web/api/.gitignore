@@ -1,0 +1,22 @@
+# dependencies
+/node_modules
+/assets
+/config
+
+/todustry.sqlite
+
+# misc
+.DS_Store
+.env
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+#editor settings
+.vscode
+
+# dotenv environment variables file
+#.env
+
+package-lock.json

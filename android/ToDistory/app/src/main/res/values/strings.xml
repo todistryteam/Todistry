@@ -1,0 +1,455 @@
+<resources>
+    <string name="app_name">TODistry</string>
+    <!--Splash Screen-->
+    <string name="sharing_love_and_creating_family_history_today">“Sharing Love and Creating Family History Today”</string>
+
+    <!--Language Select Screen-->
+    <string name="select_language">Select language</string>
+    <string name="spanish">Spanish</string>
+    <string name="english">English</string>
+    <string name="submit">Submit</string>
+
+    <!--Welcome Screen-->
+    <string name="connect_with_relatives">Connect With Relatives</string>
+    <string name="build_your_family_tree">Build your family tree</string>
+    <string name="create_memories">Create Memories</string>
+    <string name="create_and_record_your_family_history_for_generations_to_come">Create and record your family history for \ngenerations to come</string>
+    <string name="capture_precious_moments">Capture Precious Moments</string>
+    <string name="post_video_chat_to_your_family_members">Post/Video Chat to your family members</string>
+    <string name="sign_in">Sign in</string>
+    <string name="get_started">Get Started</string>
+
+    <!--SignIn Screen-->
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="don_t_have_an_account">Don’t have an account?</string>
+    <string name="signup">Signup</string>
+    <string name="email_compulsary">Email*</string>
+    <string name="password_compulsary">Password*</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="valid_email_address_required">Valid Email Address Required</string>
+
+    <!--SignUp Screen-->
+    <string name="share_love_and_create_family_history_today">Share Love and Create Family History Today</string>
+    <string name="create_an_administrator_profile">Create an Administrator Profile</string>
+    <string name="admin_text_details">Only as an administrator can you add or remove names. However, a family can edit their profile, which gives them the limited possibility of adding children and spouse.</string>
+    <string name="admin_text_details2">As an administrator, you have the possibility to assign the tree to a legacy (beneficiary) in the event of his death.</string>
+    <string name="note_required_field">Note: *=Required</string>
+    <string name="first_name">First Name*</string>
+    <string name="enter_first_name">Enter First Name</string>
+    <string name="middle_name">Middle Name</string>
+    <string name="enter_middle_name">Enter Midlle Name</string>
+    <string name="last_name">Last Name*</string>
+    <string name="enter_last_name">Enter Last Name</string>
+    <string name="gender">Gender*</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="rather_not_say">Rather not say</string>
+    <string name="select_gender">Select Gender</string>
+    <string name="birth_date_compulsary">Birth Date*</string>
+    <string name="year">Year</string>
+    <string name="mobile_number_compulsary">Mobile Number*</string>
+    <string name="enter_mobile_number">Enter Mobile Number</string>
+    <string name="password_info">Password info</string>
+    <string name="family_tree_name">Family Tree Name*</string>
+    <string name="enter_family_tree_name">Enter Family Tree Name</string>
+    <string name="legacy_name">Legacy Name</string>
+    <string name="enter_legacy_name">Enter Legacy Name</string>
+    <string name="legacy_email_address">Legacy Email Address</string>
+    <string name="enter_legacy_email_address">Enter Legacy Email Address</string>
+    <string name="this_email_already_exists">This Email Already Exists</string>
+    <string name="minimum_8_characters_required">Minimum 8 Characters Required</string>
+    <string name="select_birth_date">Select Birth Date</string>
+    <string name="select_birth_date_day">Select Birth Date Day</string>
+    <string name="select_birth_date_month">Select Birth Date Month</string>
+    <string name="enter_birth_date_year">Enter Birth Date Year</string>
+    <string name="four_digits_required">4 Digits Required</string>
+    <string name="password_must_match_criteria">Password must match criteria</string>
+    <string name="minimum_8_characters">• Minimum 8 characters\n</string>
+    <string name="at_least_one_number">• At least one number\n</string>
+    <string name="at_least_one_special_character">• At least one special character ($, %, @, etc.)\n</string>
+    <string name="at_least_one_uppercase_letter">• At least one uppercase letter\n</string>
+    <string-array name="birth_date_day">
+        <item>Day</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+    </string-array>
+    <string-array name="birth_date_month">
+        <item>Month</item>
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Apr</item>
+        <item>May</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Aug</item>
+        <item>Sep</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Dec</item>
+    </string-array>
+    <string name="ok">OK</string>
+    <string name="contact_information">Contact Information</string>
+    <string name="website">Website</string>
+    <string name="enter_website">Enter Website</string>
+    <string name="blog">Blog</string>
+    <string name="enter_blog">Enter Blog</string>
+    <string name="home_phone_number">Home Phone Number</string>
+    <string name="enter_home_phone_number">Enter Home Phone Number</string>
+    <string name="work_phone_number">Work Phone Number</string>
+    <string name="enter_work_phone_number">Enter Work Phone Number</string>
+    <string name="address">Address</string>
+    <string name="enter_address">Enter Address</string>
+    <string name="biography">Biography</string>
+    <string name="birth_place">Birth place</string>
+    <string name="enter_birth_place">Enter Birth Place</string>
+    <string name="profession">Profession</string>
+    <string name="enter_profession">Enter Profession</string>
+    <string name="company">Company</string>
+    <string name="enter_company">Enter Company</string>
+    <string name="interests">Interests</string>
+    <string name="enter_interests">Enter Interests</string>
+    <string name="activities">Activities</string>
+    <string name="enter_activities">Enter Activities</string>
+    <string name="bio_notes">Bio notes</string>
+    <string name="enter_bio_notes">Enter Bio notes</string>
+    <string name="submit_an_administrator_profile">Submit an Administrator Profile</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="terms_conditions">Terms Conditions</string>
+    <string name="terms_conditions_message">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.&#10;&#10;The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English.&#10;&#10;Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for lorem ipsum will uncover many web sites still in their infancy</string>
+    <string name="i_accept_termsconditions_and_privacy_policy"><![CDATA[I accept Terms & Conditions and Privacy Policy]]></string>
+    <string name="i_accept">I Accept</string>
+
+    <!--Main Screen-->
+    <string name="create_tree_text">Creating your family tree is just minutes away.All you need to do is complete and submit the administrator profile that follows.</string>
+    <string name="build_nfamily_ntree">Build \nFamily \nTree</string>
+    <string name="tap_nhere">Tap \nhere</string>
+    <string name="existing_tree_text">Find out if you’re already on an existing Tree by simply typing in your name or your parents’ name. Once you recognize your family member from the list of search results you must contact them for the tree’s access code to join.</string>
+    <string name="find_nexisting_n_tree"> Find \nExisting \n Tree</string>
+
+    <!--Drawer Menu-->
+    <string name="home_menu">Home</string>
+    <string name="profile_menu">Profile</string>
+    <string name="tree_menu">Tree</string>
+    <string name="support_menu">Support</string>
+    <string name="settings_menu">Settings</string>
+    <string name="logout_menu">Logout</string>
+
+    <!--General-->
+    <string name="please_wait">Please wait…</string>
+    <string name="alert">Alert</string>
+    <string name="are_you_sure_you_want_to_logout">Are you sure you want to logout?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+
+    <!--Tree Screen-->
+    <string name="go_to_publish_your_tree">Go to Publish Your Tree</string>
+
+    <!--Add Family Member Screen-->
+    <string name="create_family_member_s_profile">Create Family Member’s profile</string>
+    <string name="please_select_member_type">Please Select Member Type</string>
+    <string name="suffix_compulsary">Suffix*</string>
+    <string name="please_select_suffix">Please Select Suffix</string>
+    <string name="please_select_gender">Please Select Gender</string>
+    <string name="relationship_with_admin">Relationship With Admin*</string>
+    <string name="please_select_relationship_with_admin">Please Select Relationship With Admin</string>
+    <string name="birth_date">Birth date</string>
+    <string name="person_status">Person Status</string>
+    <string name="alive">Alive</string>
+    <string name="deceased">Deceased</string>
+    <string name="please_select_person_status">Please Select Person Status</string>
+    <string name="email_optional">Email</string>
+    <string name="mobile">Mobile</string>
+    <string name="street_number">Street Number</string>
+    <string name="enter_street_number">Enter Street Number</string>
+    <string name="apt_unit_number">APT./UNIT Number</string>
+    <string name="enter_apt_unit_number">Enter APT./UNIT Number</string>
+    <string name="city">City</string>
+    <string name="enter_city">Enter City</string>
+    <string name="state">State</string>
+    <string name="enter_state">Enter State</string>
+    <string name="zip_code">Zip Code</string>
+    <string name="enter_zip_code">Enter Zip Code</string>
+    <string name="birth_first_name">Birth First Name</string>
+    <string name="enter_birth_first_name">Enter Birth First Name</string>
+    <string name="birth_last_name">Birth Last Name</string>
+    <string name="enter_birth_last_name">Enter Birth Last Name</string>
+    <string name="nick_name">Nick Name</string>
+    <string name="enter_nick_name">Enter Nick Name</string>
+    <string name="select_member_type_label">Select Member Type*</string>
+    <string name="parents">Parents</string>
+    <string name="siblings">Siblings</string>
+    <string name="child">Child</string>
+    <string name="spouse">Spouse</string>
+    <string name="select_parents_type">Select Parents Type*</string>
+    <string name="adoptive_parent">Adoptive Parent</string>
+    <string name="biological">Biological</string>
+    <string name="foster_parent">Foster Parent</string>
+    <string name="god_parent">God Parent</string>
+    <string name="step_parent">Step Parent</string>
+    <string name="select_sibling_type">Select Sibling Type*</string>
+    <string name="biological_both_parents">Biological both parents</string>
+    <string name="step_sibling">Step Sibling</string>
+    <string name="adoptive">Adoptive</string>
+    <string name="foster">Foster</string>
+    <string name="god">God</string>
+    <string name="select_child_type">Select Child Type*</string>
+    <string name="child_with_spouse">Child with Spouse</string>
+    <string name="child_with_partner">Child with Partner</string>
+    <string name="child_with_new_partner">Child with New Partner</string>
+    <string name="god_child">God Child</string>
+    <string name="select_spouse_type">Select Spouse Type*</string>
+    <string name="husband">Husband</string>
+    <string name="wife">Wife</string>
+    <string name="partner">Partner</string>
+    <string name="select_biological_one_parent">Select Biological One Parent*</string>
+    <string name="biological_mother">Biological Mother</string>
+    <string name="biological_father">Biological Father</string>
+    <string name="select_suffix">Select Suffix</string>
+    <string name="suffix_sr">Sr.</string>
+    <string name="suffix_jr">Jr.</string>
+    <string name="suffix_i">I</string>
+    <string name="suffix_ii">II</string>
+    <string name="suffix_iii">III</string>
+    <string name="suffix_iv">IV</string>
+    <string name="suffix_v">V</string>
+    <string name="suffix_vi">VI</string>
+    <string name="suffix_vii">VII</string>
+    <string name="suffix_viii">VIII</string>
+    <string name="suffix_ix">IX</string>
+    <string name="suffix_x">X</string>
+    <string name="suffix_esq">Esq.</string>
+    <string name="suffix_phd">Ph.D.</string>
+    <string name="suffix_md">M.D.</string>
+    <string name="suffix_dds">D.D.S.</string>
+    <string name="suffix_jd">J.D.</string>
+    <string name="suffix_dvm">D.V.M.</string>
+    <string name="suffix_mba">MBA</string>
+    <string name="suffix_ms">M.S.</string>
+    <string name="suffix_ma">M.A.</string>
+    <string name="suffix_mdiv">M.Div.</string>
+    <string name="suffix_rn">R.N.</string>
+    <string name="suffix_cpa">CPA</string>
+    <string name="suffix_pe">P.E.</string>
+    <string name="suffix_reverend">Reverend</string>
+    <string name="suffix_bishop">Bishop</string>
+    <string name="suffix_pastor">Pastor</string>
+    <string name="suffix_rabbi">Rabbi</string>
+    <string name="suffix_imam">Imam</string>
+    <string name="suffix_capt">Capt.</string>
+    <string name="suffix_lt">Lt.</string>
+    <string name="suffix_major">Major</string>
+    <string name="suffix_col">Col.</string>
+    <string name="suffix_general">General</string>
+    <string name="suffix_admiral">Admiral</string>
+    <string name="suffix_hon">Hon.</string>
+    <string name="suffix_amb">Amb.</string>
+    <string name="suffix_prof">Prof.</string>
+    <string name="suffix_dr">Dr.</string>
+    <string name="select_relationship_with_admin">Select Relationship With Admin</string>
+    <!-- Direct family -->
+    <string name="relationship_self">Self</string>
+    <string name="relationship_parent">Parent</string>
+    <string name="relationship_child">Child</string>
+    <string name="relationship_sibling">Sibling</string>
+    <string name="relationship_spouse">Spouse</string>
+    <!-- Step-family -->
+    <string name="relationship_stepfather">Stepfather</string>
+    <string name="relationship_stepmother">Stepmother</string>
+    <string name="relationship_stepbrother">Stepbrother</string>
+    <string name="relationship_stepsister">Stepsister</string>
+    <string name="relationship_stepson">Stepson</string>
+    <string name="relationship_stepdaughter">Stepdaughter</string>
+    <!-- In-laws -->
+    <string name="relationship_father_in_law">Father-in-law</string>
+    <string name="relationship_mother_in_law">Mother-in-law</string>
+    <string name="relationship_brother_in_law">Brother-in-law</string>
+    <string name="relationship_sister_in_law">Sister-in-law</string>
+    <string name="relationship_son_in_law">Son-in-law</string>
+    <string name="relationship_daughter_in_law">Daughter-in-law</string>
+    <!-- Grand level -->
+    <string name="relationship_grandfather">Grandfather</string>
+    <string name="relationship_grandmother">Grandmother</string>
+    <string name="relationship_grandson">Grandson</string>
+    <string name="relationship_granddaughter">Granddaughter</string>
+    <!-- Great-grand level -->
+    <string name="relationship_great_grandfather">Great-grandfather</string>
+    <string name="relationship_great_grandmother">Great-grandmother</string>
+    <string name="relationship_great_grandson">Great-grandson</string>
+    <string name="relationship_great_granddaughter">Great-granddaughter</string>
+    <!-- Uncle/Aunt, Niece/Nephew -->
+    <string name="relationship_uncle">Uncle</string>
+    <string name="relationship_aunt">Aunt</string>
+    <string name="relationship_great_uncle">Great-uncle</string>
+    <string name="relationship_great_aunt">Great-aunt</string>
+    <string name="relationship_nephew">Nephew</string>
+    <string name="relationship_niece">Niece</string>
+    <string name="relationship_grandnephew">Grandnephew</string>
+    <string name="relationship_grandniece">Grandniece</string>
+    <!-- Cousins -->
+    <string name="relationship_first_cousin">First Cousin</string>
+    <string name="relationship_second_cousin">Second Cousin</string>
+    <string name="relationship_third_cousin">Third Cousin</string>
+    <string name="relationship_cousin_once_removed">Cousin Once Removed</string>
+    <string name="relationship_cousin_twice_removed">Cousin Twice Removed</string>
+    <!-- Miscellaneous -->
+    <string name="relationship_friend">Friend</string>
+    <string name="relationship_guardian">Guardian</string>
+    <string name="relationship_godparent">Godparent</string>
+    <string name="relationship_godchild">Godchild</string>
+    <string name="relationship_adopted_child">Adopted Child</string>
+    <string name="relationship_foster_parent">Foster Parent</string>
+    <string name="relationship_foster_child">Foster Child</string>
+    <string name="relationship_roommate">Roommate</string>
+    <string name="relationship_partner">Partner</string>
+    <string name="relationship_fiance">Fiancé</string>
+    <string name="relationship_ex_spouse">Ex-Spouse</string>
+    <string name="relationship_other">Other</string>
+    <!-- Ancestral Tree -->
+    <string name="relationship_2nd_great_grandfather">2nd Great-Grandfather</string>
+    <string name="relationship_2nd_great_grandmother">2nd Great-Grandmother</string>
+    <string name="relationship_3rd_great_grandfather">3rd Great-Grandfather</string>
+    <string name="relationship_3rd_great_grandmother">3rd Great-Grandmother</string>
+    <string name="relationship_4th_great_grandfather">4th Great-Grandfather</string>
+    <string name="relationship_4th_great_grandmother">4th Great-Grandmother</string>
+    <string name="relationship_5th_great_grandfather">5th Great-Grandfather</string>
+    <string name="relationship_5th_great_grandmother">5th Great-Grandmother</string>
+    <string name="relationship_6th_great_grandfather">6th Great-Grandfather</string>
+    <string name="relationship_6th_great_grandmother">6th Great-Grandmother</string>
+    <string name="relationship_7th_great_grandfather">7th Great-Grandfather</string>
+    <string name="relationship_7th_great_grandmother">7th Great-Grandmother</string>
+    <string name="relationship_8th_great_grandfather">8th Great-Grandfather</string>
+    <string name="relationship_8th_great_grandmother">8th Great-Grandmother</string>
+    <string name="relationship_9th_great_grandfather">9th Great-Grandfather</string>
+    <string name="relationship_9th_great_grandmother">9th Great-Grandmother</string>
+    <string name="relationship_10th_great_grandfather">10th Great-Grandfather</string>
+    <string name="relationship_10th_great_grandmother">10th Great-Grandmother</string>
+    <string name="please_select_type">Please Select Type</string>
+    <string name="suffix_optional">Suffix</string>
+
+    <!--Member Info Screen-->
+    <string name="personal_info">Personal Info</string>
+    <string name="contact_info">Contact Info</string>
+    <string name="biographical_info">Biographical Info</string>
+    <string name="info_first_name">First Name:</string>
+    <string name="info_midlle_name">Middle Name:</string>
+    <string name="info_last_name">Last Name:</string>
+    <string name="info_suffix">Suffix:</string>
+    <string name="info_gender">Gender:</string>
+    <string name="info_birth_date">Birth Date:</string>
+    <string name="info_person_status">Person Status:</string>
+    <string name="info_email">Email:</string>
+    <string name="info_website">Website:</string>
+    <string name="info_blog">Blog:</string>
+    <string name="info_home_phone_number">Home Phone Number:</string>
+    <string name="info_work_phone_number">Work Phone Number:</string>
+    <string name="info_mobile">Mobile:</string>
+    <string name="info_street_number">Street Number:</string>
+    <string name="info_apt_unit_number">APT./UNIT Number:</string>
+    <string name="info_city">City:</string>
+    <string name="info_state">State:</string>
+    <string name="info_zip_code">Zip Code:</string>
+    <string name="info_birth_first_name">Birth First Name:</string>
+    <string name="info_birth_last_name">Birth Last Name:</string>
+    <string name="info_nick_name">Nick Name:</string>
+    <string name="info_profession">Profession:</string>
+    <string name="info_company">Company:</string>
+    <string name="info_interests">Interests:</string>
+    <string name="info_activities">Activities:</string>
+    <string name="info_bio_notes">Bio Notes:</string>
+    <string name="delete">Delete</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="deleting_this_person_will_remove_all_connected_descendants_proceed">Deleting this person will remove all connected descendants. Proceed?</string>
+    <string name="yes_delete_it">Yes delete it!</string>
+    <string name="cancel">Cancel</string>
+    <string name="seconds_remaining">seconds remaining</string>
+    <string name="member_deleted_successfully">Member Deleted Successfully</string>
+    <string name="fifteen_seconds_remaining">15 seconds remaining</string>
+    <string name="undo">Undo</string>
+
+    <!--Profile Screen-->
+    <string name="login_info">Login Info</string>
+    <string name="payment_info">Payment Info</string>
+    <string name="change_password">Change Password</string>
+
+    <!--Change Password Screen-->
+    <string name="verify_otp">Verify OTP</string>
+    <string name="otp">OTP*</string>
+    <string name="verify">Verify</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="six_digit_required">6 Digit Required</string>
+    <string name="confirm_password_compulsary">Confirm Password*</string>
+    <string name="enter_confirm_password">Enter Confirm Password</string>
+    <string name="password_and_confirm_password_doesnt_match">Password And Confirm Password Doesn\'t Match</string>
+
+    <!--Share Tree Code Screen-->
+    <string name="share_details_text">This is your access code , which you can share with your family</string>
+    <string name="share">Share</string>
+    <string name="next">Next</string>
+    <string name="to_view_the_family_tree_please_use_the_code">To view the family tree, please use the code:</string>
+    <string name="share_via">Share via</string>
+
+    <!--Publish Tree Screen-->
+    <string name="publish_your_family_tree">Publish Your Family Tree</string>
+    <string name="publish_your_tree">Publish your tree</string>
+    <string name="publish">Publish</string>
+
+    <!--Post Screen-->
+    <string name="post_message">Tap your name to edit your profile or tap your family members profile to view theirs.</string>
+    <string name="share_your_thoughts_with_your_family">Share your thoughts with your family</string>
+    <string name="post">Post</string>
+
+    <!--Announcement Screen-->
+    <string name="add_announcement">Add announcement</string>
+    <string name="add_announcement_details">Add announcement details</string>
+    <string name="post_announcement">Post Announcement</string>
+
+    <!--Create Time Capsule Screen-->
+    <string name="create_time_capsule_post">Create Time Capsule Post</string>
+    <string name="whats_on_your_mind">What’s on your mind?</string>
+    <string name="please_select_below_option_show_your_post">Please select below option show your post</string>
+    <string name="public_label">Public</string>
+    <string name="family_members">Family Members</string>
+    <string name="continue_label">Continue</string>
+    <string name="time_capsule">Time Capsule</string>
+    <string name="announcement">Announcement</string>
+
+    <!--Video Chat Screen-->
+    <string name="video_chat_participants">Video Chat Participants</string>
+    <string name="group_call">Group Call</string>
+    <string name="video_chat_in_progress">Video chat in progress</string>
+    <string name="start_recording">Start Recording</string>
+
+</resources>

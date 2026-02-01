@@ -1,0 +1,41 @@
+{
+    "title" : "Our Integrations",
+    "short_description" : "We are constantly adding more integrations, if you do not see the one you are looking for, please reach out to us.",
+    "partners" : [
+        {
+            "image": "/images/integrations/athenahealth.jpg",
+            "name": "athenahealth™",
+            "link" : "https://marketplace.athenahealth.com/product/todustry"
+        },
+        {
+            "image": "/images/integrations/nextGenLogo.png",
+            "name": "NextGen",
+            "link" : "https://www.nextgen.com/solutions/marketplace/todustry"
+        },
+        {
+            "image": "/images/integrations/AllscriptsLogo.jpg",
+            "name": "Allscripts",
+            "link" : "https://ochin.org/solutions/hit/partners/"
+        },
+        {
+            "image": "/images/integrations/OchinLogo.jpg",
+            "name": "OCHIN",
+            "link" : "https://ochin.org/solutions/hit/partners/"
+        },
+        {
+            "image": "/images/integrations/gsa.jpg",
+            "name": "GSA",
+            "link" : "https://www.gsaelibrary.gsa.gov/ElibMain/contractorInfo.do?contractNumber=47QTCA20D002H&contractorName=TRINET+MEDICAL%2C+LLC&executeQuery=YES"
+        },
+        {
+            "image": "/images/integrations/greenwayhealthLogo.jpg",
+            "name": "Greenway Health",
+            "link" : "https://www.greenwayhealth.com/"
+        },
+        {
+            "image": "/images/integrations/Amazon.png",
+            "name": "Amazon AWS",
+            "link" : "https://www.greenwayhealth.com/"
+        }
+    ]
+}

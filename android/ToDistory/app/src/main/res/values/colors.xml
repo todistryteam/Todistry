@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">#F45A28</color>
+    <color name="colorPrimaryLight">#F15A24</color>
+    <color name="colorSecondary">#15A047</color>
+    <color name="colorSecondaryLight">#39B54A</color>
+    <color name="colorTheme">#F15A24</color>
+
+    <color name="colorStartGradient">#FBB03B</color>
+    <color name="colorMidGradient">#F68630</color>
+    <color name="colorEndGradient">#F15A24</color>
+
+    <color name="clrSecondStartGradient">#39B54A</color>
+    <color name="clrSecondMidGradient">#5ACA69</color>
+    <color name="clrSecondEndGradient">#009245</color>
+
+    <color name="clrMixStartGradient">#FBB03B</color>
+    <color name="clrMixMidGradient">#91B343</color>
+    <color name="clrMixEndGradient">#39B54A</color>
+    <color name="diagram_lines_print">#666666</color>
+
+    <color name="colorTextDark">#514E4E</color>
+    <color name="consumed">#DDD</color>
+
+    <color name="colorA9A9A9">#A9A9A9</color>
+    <color name="color818589">#818589</color>
+    <color name="colorA8A8AB">#A8A8AB</color>
+    <color name="colorBBBBBB">#BBBBBB</color>
+    <color name="red">#FF0000</color>
+</resources>

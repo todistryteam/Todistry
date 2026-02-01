@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_250sdp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/_20sdp"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/messageTextView"
+        android:text="@string/member_deleted_successfully"
+        android:textSize="@dimen/_16ssp"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:fontFamily="@font/dmsans_font_medium_regular"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="false"
+        android:max="15"
+        android:progress="0"
+        style="?android:attr/progressBarStyleHorizontal"/>
+
+    <TextView
+        android:id="@+id/countdownText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/seconds_remaining"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/dmsans_font_medium_regular"
+        android:textSize="@dimen/_14ssp"/>
+
+    <Button
+        android:id="@+id/undoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/undo"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_340sdp"
+    android:layout_marginStart="@dimen/_15sdp"
+    android:layout_marginEnd="@dimen/_15sdp"
+    app:cardCornerRadius="@dimen/_20sdp"
+    app:cardElevation="@dimen/_5sdp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_25sdp">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/_30sdp">
+
+            <RadioButton
+                android:id="@+id/rbParent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_7sdp"
+                android:fontFamily="@font/dmsans_font_regular"
+                android:text="@string/parents"
+                android:textColor="@color/black"
+                android:textFontWeight="400"
+                android:textSize="@dimen/_13ssp"
+                android:theme="@style/MyRadioButton" />
+
+            <RadioButton
+                android:id="@+id/rbSiblings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_7sdp"
+                android:fontFamily="@font/dmsans_font_regular"
+                android:text="@string/siblings"
+                android:textColor="@color/black"
+                android:textFontWeight="400"
+                android:textSize="@dimen/_13ssp"
+                android:theme="@style/MyRadioButton" />
+
+            <RadioButton
+                android:id="@+id/rbChild"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_7sdp"
+                android:fontFamily="@font/dmsans_font_regular"
+                android:text="@string/child"
+                android:textColor="@color/black"
+                android:textFontWeight="400"
+                android:textSize="@dimen/_13ssp"
+                android:theme="@style/MyRadioButton" />
+
+            <RadioButton
+                android:id="@+id/rbSpouse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_7sdp"
+                android:fontFamily="@font/dmsans_font_regular"
+                android:text="@string/spouse"
+                android:textColor="@color/black"
+                android:textFontWeight="400"
+                android:textSize="@dimen/_13ssp"
+                android:theme="@style/MyRadioButton" />
+
+            <RadioButton
+                android:id="@+id/rbMoveBefore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_7sdp"
+                android:fontFamily="@font/dmsans_font_regular"
+                android:text="Move Sibilings"
+                android:visibility="gone"
+                android:textColor="@color/black"
+                android:textFontWeight="400"
+                android:textSize="@dimen/_13ssp"
+                android:theme="@style/MyRadioButton" />
+
+
+            <RadioButton
+                android:id="@+id/rbNewTree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_7sdp"
+                android:fontFamily="@font/dmsans_font_regular"
+                android:text="do you want to create new tree?"
+                android:textColor="@color/black"
+                android:textFontWeight="400"
+                android:textSize="@dimen/_13ssp"
+                android:theme="@style/MyRadioButton"
+                android:visibility="gone" />
+        </RadioGroup>
+
+        <RelativeLayout
+            android:id="@+id/rlSubmit"
+            android:layout_width="@dimen/_180sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_below="@+id/radioGroup"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/button_primary_background"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5sdp">
+
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:adjustViewBounds="true"
+                android:contentDescription="@null"
+                android:src="@drawable/official_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/imgLogo"
+                android:fontFamily="@font/dmsans_font_bold_regular"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:textFontWeight="700"
+                android:textSize="@dimen/_13ssp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

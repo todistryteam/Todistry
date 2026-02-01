@@ -1,0 +1,464 @@
+{
+	"info": {
+		"_postman_id": "480b1cf1-de4e-49f3-b074-a41d224eb813",
+		"name": "todustryweb",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31024139"
+	},
+	"item": [
+		{
+			"name": "blogs",
+			"item": [
+				{
+					"name": "list blog",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accesstoken",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ0eXBlIjoiQWRtaW4iLCJpYXQiOjE3MTk0MjAyNTF9.zbXXXih66BwpYfk3Wt99iqEvkZTunjy3p7_qrcEE1kY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3001/api/blog/getList",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"blog",
+								"getList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get blog detail api",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accesstoken",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ0eXBlIjoiQWRtaW4iLCJpYXQiOjE3MTk0MjAyNTF9.zbXXXih66BwpYfk3Wt99iqEvkZTunjy3p7_qrcEE1kY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"id\":1}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/blog/getById",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"blog",
+								"getById"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create blog ",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accesstoken",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ0eXBlIjoiQWRtaW4iLCJpYXQiOjE3MTk0MjAyNTF9.zbXXXih66BwpYfk3Wt99iqEvkZTunjy3p7_qrcEE1kY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "test123",
+									"type": "text"
+								},
+								{
+									"key": "slug",
+									"value": "test123",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Testing Descr",
+									"type": "text"
+								},
+								{
+									"key": "tags",
+									"value": "Test",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "Active",
+									"type": "text"
+								},
+								{
+									"key": "blog_image",
+									"type": "file",
+									"src": "postman-cloud:///1ef361f8-ec42-4500-bb0f-ab55d1972573"
+								},
+								{
+									"key": "blog_thumb_image",
+									"type": "file",
+									"src": "postman-cloud:///1ef361f8-ec42-4500-bb0f-ab55d1972573"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/blog/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"blog",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "remove blog ",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accesstoken",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ0eXBlIjoiQWRtaW4iLCJpYXQiOjE3MTk0MjAyNTF9.zbXXXih66BwpYfk3Wt99iqEvkZTunjy3p7_qrcEE1kY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"id\":2}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/blog/remove",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"blog",
+								"remove"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update blog ",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accesstoken",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ0eXBlIjoiQWRtaW4iLCJpYXQiOjE3MTk2NzM0MjZ9.IJb9a-q7WZZIkBZ1tGY8as8ehnEwXcQFcz1Z7Rm5Znc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"4\",\r\n    \"title\":\"test12334234\",\r\n    \"slug\":\"test123234234\",\r\n    \"description\":\"Testing Descr234234\",\r\n    \"tags\":\"Test234234\",\r\n    \"status\":\"Active\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/blog/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"blog",
+								"update"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "contactus",
+			"item": []
+		},
+		{
+			"name": "setting get ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/api/settings",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"settings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "integrations",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/api/integrations",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"integrations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "adminuser login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"admin@gmail.com\",\r\n    \"password\":\"123456789\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/adminuser/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"adminuser",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "send contactus email data",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accesstoken",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ0eXBlIjoiQWRtaW4iLCJpYXQiOjE3MTk0MjAyNTF9.zbXXXih66BwpYfk3Wt99iqEvkZTunjy3p7_qrcEE1kY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"name\":\"John deo\",\r\n\"email\":\"johndeo@gmail.com\",\r\n\"phone\":\"0123456789\",\r\n\"message\":\"Test Message\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/contact/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"contact",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin contact list email",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accesstoken",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ0eXBlIjoiQWRtaW4iLCJpYXQiOjE3MTk0MjAyNTF9.zbXXXih66BwpYfk3Wt99iqEvkZTunjy3p7_qrcEE1kY",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3001/api/contact/getList",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"contact",
+						"getList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin contact detail ",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accesstoken",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ0eXBlIjoiQWRtaW4iLCJpYXQiOjE3MTk0MjAyNTF9.zbXXXih66BwpYfk3Wt99iqEvkZTunjy3p7_qrcEE1kY",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/contact/getById",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"contact",
+						"getById"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "contact us status note update",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accesstoken",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ0eXBlIjoiQWRtaW4iLCJpYXQiOjE3MTk0MjAyNTF9.zbXXXih66BwpYfk3Wt99iqEvkZTunjy3p7_qrcEE1kY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"id\":\"38\",    \r\n\"status\":\"Closed\",\r\n\"notes\":\"notes aasd\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/contact/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"contact",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin contact remove",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accesstoken",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ0eXBlIjoiQWRtaW4iLCJpYXQiOjE3MTk0MjAyNTF9.zbXXXih66BwpYfk3Wt99iqEvkZTunjy3p7_qrcEE1kY",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/contact/remove",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"contact",
+						"remove"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/nav_home"
+        android:title="@string/home_menu" />
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/nav_profile"
+        android:title="@string/profile_menu" />
+    <item
+        android:id="@+id/nav_tree"
+        android:icon="@drawable/nav_tree"
+        android:title="@string/tree_menu" />
+    <item
+        android:id="@+id/nav_support"
+        android:icon="@drawable/nav_support"
+        android:title="@string/support_menu" />
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@drawable/nav_setting"
+        android:title="@string/settings_menu" />
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/nav_logout"
+        android:title="@string/logout_menu" />
+</menu>

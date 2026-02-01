@@ -1,0 +1,234 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <RelativeLayout
+            android:id="@+id/layoutTop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_230sdp"
+            android:background="@drawable/welcome_img_1" />
+
+        <RelativeLayout
+            android:id="@+id/layoutBottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/layoutTop"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/_50sdp">
+
+            <ImageView
+                android:id="@+id/imgApp"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@null"
+                android:src="@drawable/app_name_logo" />
+
+            <TextView
+                android:id="@+id/txtWelcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgApp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/dmsans_font_bold_italic"
+                android:text="@string/sharing_love_and_creating_family_history_today"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textFontWeight="700"
+                android:textSize="@dimen/_12ssp" />
+
+
+            <RelativeLayout
+                android:id="@+id/rlImage1"
+                android:layout_width="@dimen/_300sdp"
+                android:layout_height="@dimen/_200sdp"
+                android:layout_below="@+id/txtWelcome"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:background="@drawable/welcome_image_background">
+
+                <ImageView
+                    android:layout_width="@dimen/_300sdp"
+                    android:layout_height="@dimen/_200sdp"
+                    android:layout_centerVertical="true"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/welcome_img_2" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtWelcomeTxt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlImage1"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/dmsans_font_bold_regular"
+                android:text="@string/connect_with_relatives"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textFontWeight="700"
+                android:textSize="@dimen/_16ssp" />
+
+            <TextView
+                android:id="@+id/tvWelcomeTxt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtWelcomeTxt1"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/dmsans_font_medium_regular"
+                android:text="@string/build_your_family_tree"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textFontWeight="400"
+                android:textSize="@dimen/_11ssp" />
+
+            <RelativeLayout
+                android:id="@+id/rlImage2"
+                android:layout_width="@dimen/_300sdp"
+                android:layout_height="@dimen/_200sdp"
+                android:layout_below="@+id/tvWelcomeTxt1"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:background="@drawable/welcome_image_background">
+
+                <ImageView
+                    android:layout_width="@dimen/_300sdp"
+                    android:layout_height="@dimen/_200sdp"
+                    android:layout_centerVertical="true"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/welcome_img_4" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtWelcomeTxt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlImage2"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/dmsans_font_bold_regular"
+                android:text="@string/create_memories"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textFontWeight="700"
+                android:textSize="@dimen/_16ssp" />
+
+            <TextView
+                android:id="@+id/tvWelcomeTxt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtWelcomeTxt2"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/dmsans_font_medium_regular"
+                android:text="@string/create_and_record_your_family_history_for_generations_to_come"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textFontWeight="400"
+                android:textSize="@dimen/_11ssp" />
+
+            <RelativeLayout
+                android:id="@+id/rlImage3"
+                android:layout_width="@dimen/_300sdp"
+                android:layout_height="@dimen/_200sdp"
+                android:layout_below="@+id/tvWelcomeTxt2"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:background="@drawable/welcome_image_background">
+
+                <ImageView
+                    android:layout_width="@dimen/_300sdp"
+                    android:layout_height="@dimen/_200sdp"
+                    android:layout_centerVertical="true"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/welcome_img_3" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtWelcomeTxt3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlImage3"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/dmsans_font_bold_regular"
+                android:text="@string/capture_precious_moments"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textFontWeight="700"
+                android:textSize="@dimen/_16ssp" />
+
+            <TextView
+                android:id="@+id/tvWelcomeTxt3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtWelcomeTxt3"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/dmsans_font_medium_regular"
+                android:text="@string/post_video_chat_to_your_family_members"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textFontWeight="400"
+                android:textSize="@dimen/_11ssp" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_below="@+id/tvWelcomeTxt3"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:background="@drawable/button_green_background"
+                android:fontFamily="@font/dmsans_font_bold_regular"
+                android:padding="@dimen/_2sdp"
+                android:text="@string/sign_in"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textFontWeight="700"
+                android:textSize="@dimen/_14ssp" />
+
+            <Button
+                android:id="@+id/btnStart"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_below="@+id/btnLogin"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_30sdp"
+                android:background="@drawable/button_primary_background"
+                android:fontFamily="@font/dmsans_font_bold_regular"
+                android:padding="@dimen/_2sdp"
+                android:text="@string/get_started"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textFontWeight="700"
+                android:textSize="@dimen/_14ssp" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/overlapImage"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_above="@id/layoutBottom"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="-70dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/app_icon_round" />
+
+    </RelativeLayout>
+
+</ScrollView>

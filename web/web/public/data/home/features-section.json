@@ -1,0 +1,21 @@
+{
+    "title" : "CONCRETE SECURITY",
+    "short_description" : "Your payments are secure, every time",
+    "features" : [
+        {
+            "icon" : "flaticon-double-click",
+            "title":"Healthcare Application Development",
+            "content": "ToDistry team develops custom barcode applications based on client’s business requirements. It uses SRX framework to develop and customize applications that are integrated with EMR and other healthcare systems."
+        },
+        {
+            "icon" : "flaticon-web-browser",
+            "title": "Healthcare Data Analytics",
+            "content": "ToDistry Data and Analytics solutions and services help providers turn healthcare data into timely, actionable insights to optimize revenue, cost, and quality performance."
+        },
+        {
+            "icon" : "flaticon-web-programming",
+            "title": "Healthcare IT & Consulting Services",
+            "content": "ToDistry professional IT team can help develop or customize immunization and medication admin forms using HTML technology with EMR/EHR products."
+        }
+    ]
+}

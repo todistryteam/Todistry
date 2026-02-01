@@ -1,0 +1,127 @@
+[
+    {
+      "id": 1,
+      "parentId": null,
+      "name": "John Doe",
+      "image": "https://example.com/images/john.jpg",
+      "age": 70,
+      "otherDetails": "Patriarch of the family",
+      "children": [
+        {
+          "id": 2,
+          "parentId": 1,
+          "name": "Mary Doe",
+          "image": "https://example.com/images/mary.jpg",
+          "age": 68,
+          "otherDetails": "John's wife",
+          "children": [
+            {
+              "id": 4,
+              "parentId": 2,
+              "name": "Michael Doe",
+              "image": "https://example.com/images/michael.jpg",
+              "age": 45,
+              "otherDetails": "Mary's first son",
+              "children": [
+                {
+                  "id": 8,
+                  "parentId": 4,
+                  "name": "Sara Doe",
+                  "image": "https://example.com/images/sara.jpg",
+                  "age": 18,
+                  "otherDetails": "Michael's daughter",
+                  "children": []
+                },
+                {
+                  "id": 9,
+                  "parentId": 4,
+                  "name": "Tom Doe",
+                  "image": "https://example.com/images/tom.jpg",
+                  "age": 16,
+                  "otherDetails": "Michael's son",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": 5,
+              "parentId": 2,
+              "name": "Emily Doe",
+              "image": "https://example.com/images/emily.jpg",
+              "age": 42,
+              "otherDetails": "Mary's daughter",
+              "children": [
+                {
+                  "id": 10,
+                  "parentId": 5,
+                  "name": "Lucas Doe",
+                  "image": "https://example.com/images/lucas.jpg",
+                  "age": 12,
+                  "otherDetails": "Emily's son",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "parentId": 1,
+          "name": "James Doe",
+          "image": "https://example.com/images/james.jpg",
+          "age": 65,
+          "otherDetails": "John's brother",
+          "children": [
+            {
+              "id": 6,
+              "parentId": 3,
+              "name": "Anna Doe",
+              "image": "https://example.com/images/anna.jpg",
+              "age": 40,
+              "otherDetails": "James's daughter",
+              "children": [
+                {
+                  "id": 11,
+                  "parentId": 6,
+                  "name": "Eva Doe",
+                  "image": "https://example.com/images/eva.jpg",
+                  "age": 8,
+                  "otherDetails": "Anna's daughter",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": 7,
+              "parentId": 3,
+              "name": "Robert Doe",
+              "image": "https://example.com/images/robert.jpg",
+              "age": 38,
+              "otherDetails": "James's son",
+              "children": [
+                {
+                  "id": 12,
+                  "parentId": 7,
+                  "name": "Max Doe",
+                  "image": "https://example.com/images/max.jpg",
+                  "age": 10,
+                  "otherDetails": "Robert's son",
+                  "children": []
+                },
+                {
+                  "id": 13,
+                  "parentId": 7,
+                  "name": "Lily Doe",
+                  "image": "https://example.com/images/lily.jpg",
+                  "age": 5,
+                  "otherDetails": "Robert's daughter",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  

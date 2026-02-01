@@ -1,0 +1,172 @@
+{
+    "title" : "The Latest from ToDistry",
+    "news" : [
+        {
+            "title": "The Journey Begins: Starting Your Family Tree Project!",
+            "image" : "/images/home-page/blog-05.jpg",
+            "description":"Introduce the excitement and importance of beginning a family tree project. <br/> Share a personal anecdote or motivation for starting the project.",
+            "link" : "/journey-begin-family-tree",
+            "slug" : "journey-begin-family-tree",
+            "date": "2024-06-10",
+            "likecount": "32",
+            "commentcount": "10",
+            "author": {
+                "name":"Json Taylor",
+                "image": "/images/home-page/profile-1.jpg"
+            },
+            "tags":[{
+                "name":"Nature",
+                "slug":"nature"
+            },{
+                "name":"Tree",
+                "slug":"family-tree"
+            }]
+        },
+        {
+            "title": "From Past to Present: Creating a Family Tree Scrapbook",
+            "image" : "/images/home-page/blog-01.jpg",
+            "description":"From Past to Present: Creating a Family Tree Scrapbook",
+            "link" : "/blog-post-family-tree-1",
+            "slug" : "blog-post-family-tree-1",
+            "date": "2024-06-10",
+            "likecount": "32",
+            "commentcount": "10",
+            "author": {
+                "name":"Json Taylor",
+                "image": "/images/home-page/profile-1.jpg"
+            },
+            "tags":[{
+                "name":"Nature",
+                "slug":"nature"
+            },{
+                "name":"Travel",
+                "slug":"travel"
+            }]
+        },
+        {
+            "title": "Unlocking Stories: How to Conduct Effective Oral History Interviews",
+            "image" : "/images/home-page/blog-02.jpg",
+            "description":"Lorem ipsum",
+            "link" : "/blog-post-2",
+            "slug" : "blog-post-2",
+            "date": "2024-06-11",
+            "likecount": "32",
+            "commentcount": "10",
+            "author": {
+                "name":"Json Taylor",
+                "image": "/images/home-page/profile-1.jpg"
+            },
+            "tags":[{
+                "name":"Nature",
+                "slug":"nature"
+            },{
+                "name":"Travel",
+                "slug":"travel"
+            }]
+        },
+        {
+            "title": "Treasures in the Attic: Discovering and Preserving Family Heirlooms",
+            "image" : "/images/home-page/blog-03.jpg",
+            "description":"Barcode on the 340B medication is scanned at the point of administration to capture all required data including Medication name, NDC, Lot #, Expiration date in patient chart.",
+            "link" : "/healthcare-application-development",
+            "slug" : "healthcare-application-development",
+            "date": "2024-06-12",
+            "likecount": "32",
+            "commentcount": "10",
+            "author": {
+                "name":"Json Taylor",
+                "image": "/images/home-page/profile-1.jpg"
+            },
+            "tags":[{
+                "name":"Nature",
+                "slug":"nature"
+            },{
+                "name":"Travel",
+                "slug":"travel"
+            }]
+        },{
+            "title": "Roots in the Soil: Exploring Our Ancestral Hometowns",
+            "image" : "/images/home-page/blog-01.jpg",
+            "description":"Barcode on the 340B medication is scanned at the point of administration to capture all required data including Medication name, NDC, Lot #, Expiration date in patient chart. Barcode on the 340B medication is scanned at the point of administration to capture all required data including Medication name, NDC, Lot #, Expiration date in patient chart. Barcode on the 340B medication is scanned at the point of administration to capture all required data including Medication name, NDC, Lot #, Expiration date in patient chart. Barcode on the 340B medication is scanned at the point of administration to capture all required data including Medication name, NDC, Lot #, Expiration date in patient chart.",
+            "link" : "/blog-13-june-2024",
+            "slug" : "blog-13-june-2024",
+            "date": "2024-06-13",
+            "likecount": "32",
+            "commentcount": "10",
+            "author": {
+                "name":"Json Taylor",
+                "image": "/images/home-page/profile-1.jpg"
+            },
+            "tags":[{
+                "name":"Nature",
+                "slug":"nature"
+            },{
+                "name":"Travel",
+                "slug":"travel"
+            }]
+        },
+        {
+            "title": "Blog post date 2024-06-14",
+            "image" : "/images/home-page/blog-01.jpg",
+            "description":"Barcode on the 340B medication is scanned at the point of administration to capture all required data including Medication name, NDC, Lot #, Expiration date in patient chart.",
+            "link" : "/blog-14-june-2024",
+            "slug" : "blog-14-june-2024",
+            "date": "2024-06-14",
+            "likecount": "32",
+            "commentcount": "10",
+            "author": {
+                "name":"Json Taylor",
+                "image": "/images/home-page/profile-1.jpg"
+            },
+            "tags":[{
+                "name":"Nature",
+                "slug":"nature"
+            },{
+                "name":"Travel",
+                "slug":"travel"
+            }]
+        },
+        {
+            "title": "Blog post date 2024-06-15",
+            "image" : "/images/home-page/blog-02.jpg",
+            "description":"Barcode on the 340B medication is scanned at the point of administration to capture all required data including Medication name, NDC, Lot #, Expiration date in patient chart.",
+            "link" : "/blog-15-june-2024",
+            "slug" : "blog-15-june-2024",
+            "date": "2024-06-15",
+            "likecount": "32",
+            "commentcount": "10",
+            "author": {
+                "name":"Json Taylor",
+                "image": "/images/home-page/profile-1.jpg"
+            },
+            "tags":[{
+                "name":"Nature",
+                "slug":"nature"
+            },{
+                "name":"Travel",
+                "slug":"travel"
+            }]
+        },
+        {
+            "title": "Blog post date 2024-06-16",
+            "image" : "/images/home-page/blog-03.jpg",
+            "description":"Barcode on the 340B medication is scanned at the point of administration to capture all required data including Medication name, NDC, Lot #, Expiration date in patient chart.",
+            "link" : "/blog-16-june-2024",
+            "slug" : "blog-16-june-2024",
+            "date": "2024-06-16",
+            "likecount": "32",
+            "commentcount": "10",
+            "author": {
+                "name":"Json Taylor",
+                "image": "/images/home-page/profile-1.jpg"
+            },
+            "tags":[{
+                "name":"Nature",
+                "slug":"nature"
+            },{
+                "name":"Travel",
+                "slug":"travel"
+            }]
+        }
+    ]
+}

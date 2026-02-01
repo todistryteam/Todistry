@@ -1,0 +1,319 @@
+import CTA from "@/src/components/CTA";
+import Layout from "@/src/layout/Layout";
+import axios from 'axios';
+import { appgetTree } from "../api";
+import { useEffect, useState, React,useRef } from "react";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+import EditNodeModal from '@/src/components/tree/EditNodeModal';
+import CreateNodeModal from '@/src/components/tree/CreateNodeModal';
+
+import f3 from "@/src/components/tree/familyChartNew";
+
+
+
+const FamilyTreePage = () => {
+  const containerRef = useRef(null);
+  const [searchTerm, setSearchTerm] = useState('');
+  const [successMessage, setSuccessMessage] = useState('');
+  const [loginData, setFamilyTreeData] = useState();
+  const [memberData, setMemberData] = useState();
+  const [treeData, setTreeData] = useState([]);
+  const [filteredTreeData, setFilteredTreeData] = useState([]);
+  const [parentData, setParentData] = useState();
+  var m=1;
+
+  const [selectedNode, setSelectedNode] = useState(null);
+  const [formData, setFormData] = useState({
+      name: '',
+      image: '',
+      age: '',
+      otherDetails: ''
+  });
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [createModalIsOpen, setCreateModalIsOpen] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const handleSearchChange = (e) => {
+    console.log(e.target.value);
+    setSearchTerm(e.target.value);
+  };
+
+ 
+
+  const getPageData = async (treeObj) => {
+    console.log(m++);
+    try {
+        if (!containerRef.current) return;
+
+        const treeObj = await appgetTree();
+        console.log(treeObj?.data?.data?.members);
+        if (treeObj?.data) {        
+          setTreeData(treeObj?.data?.data?.members);
+          setFilteredTreeData(treeObj?.data?.data?.members);
+          const store = f3.createStore({
+            data: treeObj?.data?.data?.members,
+            node_separation: 250,
+            level_separation: 150
+          }),
+          view = f3.d3AnimationView({
+            store,
+            cont: document.querySelector("#FamilyChart")
+          }),
+          Card = f3.elements.Card({
+            store,
+            svg: view.svg,
+            card_dim: {
+              w: 230,
+              h: 120,
+              text_x: 75,
+              text_y: 15,
+              img_w: 60,
+              img_h: 60,
+              img_x: 5,
+              img_y: 5
+            },
+            card_display: [
+              (d) => `${d.data["first_name"] || ""}`,
+              (d)=> `${d.data["last_name"] || ""}`,
+            (d) => `${d.data["birthDate"] || ""}`
+            ],
+            cardAddform: addform,
+            cardEditForm: editform,
+            mini_tree: true,
+            link_break: false
+          });
+          view.setCard(Card);
+          store.setOnUpdate((props) => view.update(props || {}));
+          store.update.tree({ initial: true });
+
+          document.querySelectorAll(".card").forEach((card) => {
+            card.addEventListener("mouseenter", () => {
+              card.classList.add("hover"); // Add hover class on mouse enter
+            });
+            card.addEventListener("mouseleave", () => {
+              card.classList.remove("hover"); // Remove hover class on mouse leave
+            });
+          });
+        }
+        
+        
+      //  const members = await getMembers();
+      
+      // Cleanup function in case the component unmounts
+     
+      
+      return () => {
+        // Add any necessary cleanup logic here
+      };
+
+      //if (members?.data?.data?.members) {
+        //const root = buildTree(members?.data?.data?.members);
+        //setMemberData(root);
+      //}
+     
+    } catch (error) {
+      console.error('Error fetching family members:', error);
+    }
+  };
+
+  const addform=()=>{
+    if (window.Android) {
+      window.Android.addForm();
+  }
+  }
+  const editform=()=>{
+    if (window.Android) {
+      window.Android.editForm();
+  } 
+  }
+  const handleNodeClick = (nodeData) => {
+    setSelectedNode(nodeData);
+    setFormData({
+      name: nodeData.name,
+      image: nodeData.image,
+    });
+    setModalIsOpen(true);
+  };
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value
+    });
+  };
+
+  const handleEditNode = async () => {
+    if (selectedNode) {
+      try {
+        const updatedData = {
+          name: formData.name,
+          image: formData.image,
+          age: parseInt(formData.age),
+          otherDetails: formData.otherDetails
+        };
+
+        await axios.put(`/api/members/${selectedNode.id}`, updatedData);
+        fetchData();
+        setSelectedNode(null);
+        setModalIsOpen(false);
+      } catch (error) {
+        console.error('Error updating member:', error);
+      }
+    }
+  };
+
+  const handleDeleteNode = async () => {
+    if (selectedNode) {
+      try {
+        await axios.delete(`/api/members/${selectedNode.id}`);
+        fetchData();
+        setSelectedNode(null);
+        setModalIsOpen(false);
+      } catch (error) {
+        console.error('Error deleting member:', error);
+      }
+    }
+  };
+
+  // Handle adding a new node
+  const handleCreateNode = async (newNodeData) => {
+    try {
+      console.log('create newNodeData',newNodeData);
+      return true;
+      await axios.post('/api/members', newNodeData);
+      fetchData();
+      setCreateModalIsOpen(false);
+    } catch (error) {
+      console.error('Error creating member:', error);
+    }
+  };
+
+  const isModalOpen = modalIsOpen || createModalIsOpen; // Check if any modal is open
+
+  useEffect(() => {
+    if(m==1){
+      getPageData();
+      
+    }
+    const svg = containerRef.current.querySelector('svg'); // Assuming there's an SVG element within
+    if (svg) {
+        svg.setAttribute('width', '500');
+        svg.setAttribute('height', '300');
+    }
+  }, []);
+
+  useEffect(() => {
+    // Apply filtering logic when searchTerm or treeData changes
+   
+    if (treeData.length > 0) {
+      const filteredData = treeData.filter(
+        (member) =>
+          member.data.first_name?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+          member.data.last_name?.toLowerCase().includes(searchTerm.toLowerCase())
+      );
+      console.log(filteredData)
+      setFilteredTreeData(filteredData); // Set the filtered data
+    }
+  }, [searchTerm, treeData]);
+
+
+  return (
+    
+    
+      <section className="wide-60 cta-section division mb-4">
+        <div className="container" style={{ zIndex: '0' }}>
+          <div style={{ width: '100%', height: '500px' }}>
+            {/* <button className="" onClick={() => setCreateModalIsOpen(true)} style={createButtonStyle}>
+              Add New Node
+            </button> */}
+            <div style={{ width: '100%', height: '500px',float:"right" }}>
+            <div className="f3" id="FamilyChart" ref={containerRef}></div>
+            </div>
+            <EditNodeModal
+              isOpen={modalIsOpen}
+              onRequestClose={() => setModalIsOpen(false)}
+              formData={formData}
+              handleInputChange={handleInputChange}
+              handleEditNode={handleEditNode}
+              handleDeleteNode={handleDeleteNode}
+              parentData={parentData}
+            />
+
+            <CreateNodeModal
+              isOpen={createModalIsOpen}
+              onRequestClose={() => setCreateModalIsOpen(false)}
+              onCreateNode={handleCreateNode}
+              parentData={parentData}
+            />
+
+          </div>
+        </div>
+        <ToastContainer />
+      </section>
+
+      
+  );
+};
+
+const renderNodeWithButtons = (rd3tProps, onClick, isModalOpen) => {
+  const { nodeDatum } = rd3tProps;
+  const cursorStyle = isModalOpen ? 'default' : 'pointer'; // Change cursor style based on modal state  
+  return (
+    <g>
+      {/* Draw a circle behind the image */}
+      <circle
+        r={15}
+        fill="lightblue"
+        onClick={() => !isModalOpen && onClick(nodeDatum)}
+        style={{ cursor: cursorStyle }}
+      />
+
+      {/* Render the image using SVG image element */}
+      <image
+        href={nodeDatum.image}  // Use href instead of src for SVG images
+        alt={nodeDatum.name}
+        x={-20}  // Center image horizontally
+        y={-20}  // Center image vertically
+        width={50}  // Set image width
+        height={50}  // Set image height
+        style={{ marginBottom: '50px', }}
+      />
+
+      {/* Render the text below the image */}
+      <text
+        fill="black"
+        x={0}  // Center text horizontally
+        y={42}  // Position text below the image
+        textAnchor="middle"
+        onClick={() => !isModalOpen && onClick(nodeDatum)}
+        style={{ cursor: cursorStyle }}
+      >
+        {nodeDatum.name} - {nodeDatum.memberType}
+      </text>
+    </g>
+  );
+};
+
+const createButtonStyle = {
+  marginBottom: '20px',
+  padding: '10px 15px',
+  border: 'none',
+  backgroundColor: '#4CAF50',
+  color: 'white',
+  borderRadius: '4px',
+  cursor: 'pointer'
+};
+
+
+export default FamilyTreePage;

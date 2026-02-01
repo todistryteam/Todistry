@@ -1,0 +1,214 @@
+{
+    "success": 1,
+    "data": {
+      "id": 1,
+      "userId": 1,
+      "memberid": 1,
+      "treeName": "family-tree-351408283",
+      "slug": "family-tree-351408283",
+      "shareDescription": "family-tree-351408283",
+      "familyCode": "vPOus-351408283",
+      "isPublished": "UnPulished",
+      "status": "Active",
+      "isDeleted": "No",
+      "created_at": "2024-09-04T04:31:29.000Z",
+      "updated_at": "2024-09-14T09:40:50.000Z",
+      "members": [
+        {
+          "id": "1",
+          "rels": {
+            "spouses": [
+              "6"
+            ],
+            "father": "2",
+            "mother": "3",
+            "children": [
+              "7"
+            ]
+          },
+          "data": {
+            "first_name": "me",
+            "last_name": "",
+            "birthDate": "04-09-2024",
+            "image": "http://localhost:3001/assets/uploads/users/tree_68345-1725424289501.png",
+            "gender": "M",
+            "color_class": "root"
+          }
+        },
+        {
+          "id": "2",
+          "rels": {
+            "spouses": [
+              "3"
+            ],
+            "father": "4",
+            "mother": "5",
+            "children": [
+              "1",
+              "9"
+            ]
+          },
+          "data": {
+            "first_name": "father",
+            "last_name": "",
+            "birthDate": "04-09-2024",
+            "image": "https://static8.depositphotos.com/1009634/988/v/950/depositphotos_9883921-stock-illustration-no-user-profile-picture.jpg",
+            "gender": "M"
+          }
+        },
+        {
+          "id": "3",
+          "rels": {
+            "spouses": [
+              "2"
+            ],
+            "father": null,
+            "mother": null,
+            "children": [
+              "1",
+              "9"
+            ]
+          },
+          "data": {
+            "first_name": "mother",
+            "last_name": "",
+            "birthDate": "04-09-2024",
+            "image": "https://static8.depositphotos.com/1009634/988/v/950/depositphotos_9883921-stock-illustration-no-user-profile-picture.jpg",
+            "gender": "F"
+          }
+        },
+        {
+          "id": "4",
+          "rels": {
+            "spouses": [
+              "5"
+            ],
+            "father": null,
+            "mother": null,
+            "children": [
+              "2"
+            ]
+          },
+          "data": {
+            "first_name": "grandfather",
+            "last_name": "",
+            "birthDate": "04-09-2024",
+            "image": "https://static8.depositphotos.com/1009634/988/v/950/depositphotos_9883921-stock-illustration-no-user-profile-picture.jpg",
+            "gender": "M"
+          }
+        },
+        {
+          "id": "5",
+          "rels": {
+            "spouses": [
+              "4"
+            ],
+            "father": null,
+            "mother": null,
+            "children": [
+              "2"
+            ]
+          },
+          "data": {
+            "first_name": "grandmother",
+            "last_name": "",
+            "birthDate": "04-09-2024",
+            "image": "https://static8.depositphotos.com/1009634/988/v/950/depositphotos_9883921-stock-illustration-no-user-profile-picture.jpg",
+            "gender": "F"
+          }
+        },
+        {
+          "id": "6",
+          "rels": {
+            "spouses": [
+              "1"
+            ],
+            "father": null,
+            "mother": null,
+            "children": [
+              "7"
+            ]
+          },
+          "data": {
+            "first_name": "wife",
+            "last_name": "",
+            "birthDate": "04-09-2024",
+            "image": "https://static8.depositphotos.com/1009634/988/v/950/depositphotos_9883921-stock-illustration-no-user-profile-picture.jpg",
+            "gender": "F"
+          }
+        },
+        {
+          "id": "7",
+          "rels": {
+            "spouses": [
+              "8"
+            ],
+            "father": "1",
+            "mother": "6",
+            "children": []
+          },
+          "data": {
+            "first_name": "child",
+            "last_name": "",
+            "birthDate": "04-09-2024",
+            "image": "https://static8.depositphotos.com/1009634/988/v/950/depositphotos_9883921-stock-illustration-no-user-profile-picture.jpg",
+            "gender": "M"
+          }
+        },
+        {
+          "id": "8",
+          "rels": {
+            "spouses": [
+              "7"
+            ],
+            "father": null,
+            "mother": null,
+            "children": []
+          },
+          "data": {
+            "first_name": "child wife",
+            "last_name": "",
+            "birthDate": "04-09-2024",
+            "image": "https://static8.depositphotos.com/1009634/988/v/950/depositphotos_9883921-stock-illustration-no-user-profile-picture.jpg",
+            "gender": "F"
+          }
+        },
+        {
+          "id": "9",
+          "rels": {
+            "spouses": [],
+            "father": "2",
+            "mother": "3",
+            "children": []
+          },
+          "data": {
+            "first_name": "brother",
+            "last_name": "",
+            "birthDate": "04-09-2024",
+            "image": "https://static8.depositphotos.com/1009634/988/v/950/depositphotos_9883921-stock-illustration-no-user-profile-picture.jpg",
+            "gender": "M"
+          }
+        },
+        {
+          "id": "10",
+          "rels": {
+            "spouses": [],
+            "father": null,
+            "mother": null,
+            "children": [],
+            "halfsibling": [
+              "1"
+            ]
+          },
+          "data": {
+            "first_name": "halfSiblings",
+            "last_name": "",
+            "birthDate": "05-09-2024",
+            "image": "https://static8.depositphotos.com/1009634/988/v/950/depositphotos_9883921-stock-illustration-no-user-profile-picture.jpg",
+            "gender": "M"
+          }
+        }
+      ]
+    },
+    "message": "success!"
+  }
